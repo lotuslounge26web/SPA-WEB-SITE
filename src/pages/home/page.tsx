@@ -35,9 +35,13 @@ export default function Home() {
             <p className="font-montserrat text-lg md:text-xl lg:text-2xl text-white/95 font-light tracking-wide">
               Our official website is launching soon.
             </p>
+            {/* ▼▼▼ 修正箇所：ここから ▼▼▼ */}
             <p className="font-montserrat text-base md:text-lg lg:text-xl text-white/90 font-light">
-             Our <strong className="font-medium">spa</strong> is now open at <br />
-<strong className="font-medium">Granbell Hotel Colombo & Le Grand Galle</strong>.
+              Our <strong className="font-medium">spa</strong> is now open at <br />
+              <strong className="font-medium">Granbell Hotel Colombo & Le Grand Galle</strong>.
+            </p>
+          </div> 
+          {/* ▲▲▲ 修正箇所：ここまで（ </p> と </div> を追加しました） ▲▲▲ */}
 
           {/* Decorative Line */}
           <div className="mt-12 flex items-center justify-center">
