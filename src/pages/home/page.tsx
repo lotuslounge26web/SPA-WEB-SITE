@@ -36,9 +36,8 @@ export default function Home() {
               Our official website is launching soon.
             </p>
             <p className="font-montserrat text-base md:text-lg lg:text-xl text-white/90 font-light">
-              The <strong className="font-medium">spa</strong> is now open at <strong className="font-medium">Granbell Hotel</strong>.
-            </p>
-          </div>
+             Our <strong className="font-medium">spa</strong> is now open at <br />
+<strong className="font-medium">Granbell Hotel Colombo & Le Grand Galle</strong>.
 
           {/* Decorative Line */}
           <div className="mt-12 flex items-center justify-center">
