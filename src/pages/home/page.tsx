@@ -92,7 +92,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="font-montserrat text-xs text-white/60 hover:text-white/80 transition-colors duration-300 cursor-pointer"
           >
-            Powered by Readdy
+            Powered by Team Lotus Lounge
           </a>
         </div>
       </footer>
