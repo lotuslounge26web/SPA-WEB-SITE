@@ -1,26 +1,17 @@
-import type { RouteObject } from "react-router-dom";
-import NotFound from "../pages/NotFound";
-import Home from "../pages/home/page";
-import MenuColombo from "../pages/menu-colombo/page";
-import MenuGalle from "../pages/menu-galle/page";
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./router";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
 
-const routes: RouteObject[] = [
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/menu-colombo",
-    element: <MenuColombo />,
-  },
-  {
-    path: "/menu-galle",
-    element: <MenuGalle />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-];
 
-export default routes;
+function App() {
+  return (
+    <I18nextProvider i18n={i18n}>
+      <BrowserRouter basename={__BASE_PATH__}>
+        <AppRoutes />
+      </BrowserRouter>
+    </I18nextProvider>
+  );
+}
+
+export default App;
